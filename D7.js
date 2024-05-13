@@ -13,18 +13,29 @@ console.log(funzione("Benvenuto", "epicode"));
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 console.log("_________________________________ es 2 _________________________________");
+let randomNumber = [];
 for (let index = 0; index < 10; index++) {
-  let funzione2 = Math.floor(math.random() * 100) + 1;
-  console.log(funzione2);
+  let numero = Math.floor(Math.random() * 100) + 1;
+  randomNumber.push(numero);
 }
+console.log(randomNumber);
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
+console.log("_________________________________ es 3 _________________________________");
+const numeroPari = randomNumber.filter((numeroPari) => randomNumber % 2 === 0);
+console.log(numeroPari);
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+console.log("_________________________________ es 4 _________________________________");
+let total = 0;
+randomNumber.forEach(function (element) {
+  total += element;
+  console.log(total);
+});
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -33,6 +44,7 @@ for (let index = 0; index < 10; index++) {
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+console.log("_________________________________ es 6 _________________________________");
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
