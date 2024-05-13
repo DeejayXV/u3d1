@@ -50,10 +50,23 @@ console.log("_________________________________ es 6 ____________________________
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+console.log("_________________________________ es 7 _________________________________");
+const arrayStringa = ["ciao", "a", "tutti"];
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+console.log("_________________________________ es 8 _________________________________");
+function arrayDispari() {
+  let dispari = [];
+  let x = 1;
+  for (x; x <= 99; x += 2) {
+    dispari.push(x);
+  }
+  return dispari;
+}
+let dispari = arrayDispari();
+console.log(dispari);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
