@@ -174,7 +174,14 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-
+console.log("_________________________________ es 9 _________________________________");
+let filmPiuVecchio = 0;
+movies.forEach(function (obj) {
+  if (filmPiuVecchio <= 0 || obj.Year < filmPiuVecchio) {
+    filmPiuVecchio = obj.Year;
+  }
+});
+console.log("l'anno del film piu vecchio è " + filmPiuVecchio);
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
